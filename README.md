@@ -46,6 +46,9 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## guide
-https://blog.logrocket.com/creating-chrome-extension-react-typescript/
-### `npm install @types/chrome --save-dev` This is to remove error when calling the chrome api
-### `npm install @craco/craco --save` This is to compile multiple javascript files in accordance with a chrome extension
+https://medium.com/litslink/how-to-create-google-chrome-extension-using-react-js-5c9e343323ff
+### Install Yarn `npm install --global yarn`
+### Add chrome types `yarn add @types/chrome -D`
+### use `yarn run build`
+### package.json must be `"build": "set INLINE_RUNTIME_CHUNK=false&&react-scripts build",`
+### add craco `yarn add @craco/craco`
