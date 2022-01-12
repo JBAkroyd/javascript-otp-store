@@ -4,6 +4,7 @@ import './App.css';
 
 function App(){
     const [url, setUrl] = useState<string | undefined>('');
+    const [greeting, setGreeting] = useState<string | undefined>('');
 
     /**
      * Get current URL
@@ -19,9 +20,9 @@ function App(){
 
     function sendTestMessage() {
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
-            chrome.tabs.sendMessage(tabs[0].id as number, {greeting: "hello"}, function(response) {
-                console.log(response.farewell);
-            });
+            foreach
+            let port = chrome.tabs.connect(tabs[0].id || 0, {name: "knockknock"});
+            port.postMessage({joke: "Knock knock"});
         });
     }
 
@@ -35,6 +36,7 @@ function App(){
                 </p>
                 <button onClick={sendTestMessage}>SEND MESSAGE</button>
                 <p>Response from content:</p>
+                <p>{greeting}</p>
             </header>
         </div>
     );
