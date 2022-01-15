@@ -1,21 +1,13 @@
 {
-  "name": "javascript-otp-store",
-  "description": "Base Level Extension",
+  "name": "Javascript OTP Store",
+  "description": "Scan a QR Code",
   "version": "1.0",
   "manifest_version": 3,
-  "action": {
-    "default_popup": "index.html",
-    "default_title": "Open the popup"
-  },
-  "icons": {
-    "16": "logo192.png",
-    "48": "logo192.png",
-    "128": "logo192.png"
-  },
-  "permissions": [
-    "activeTab"
-  ],
   "background": {
-    "service_worker": "./static/js/background.js"
+    "service_worker": "js/background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "index.html"
   }
 }

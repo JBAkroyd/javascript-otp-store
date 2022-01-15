@@ -11,6 +11,12 @@
 # production
 /build
 
+.yarnrc.yml
+/.yarn
+/.idea
+webpack.config.js
+yarn.lock
+
 # misc
 .DS_Store
 .env.local
