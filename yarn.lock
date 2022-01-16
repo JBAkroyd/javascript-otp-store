@@ -372,6 +372,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"croppie@npm:^2.6.5":
+  version: 2.6.5
+  resolution: "croppie@npm:2.6.5"
+  checksum: 898e3c8de92c210ba9db6659bf7c7b31b148ad1c3a6250c5e54dfc36660ca3b60489adfac3359ca921a7c784220d350b1e1ab717492c438170484a260fde3733
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -643,6 +650,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "javascript-otp-store@workspace:."
   dependencies:
+    croppie: ^2.6.5
     html2canvas: ^1.4.0
     qr-scanner: ^1.3.0
     webpack: ^5.66.0
