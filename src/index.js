@@ -1,4 +1,5 @@
 console.log("loaded index.js");
+import Cropper from 'cropperjs';
 
 async function getTabID() {
     try {
@@ -25,6 +26,7 @@ window.onload = () => {
             chrome.tabs.captureVisibleTab(tabs[0].windowId).then((dataUrl) => {
                 let img = new Image();
                 img.src = dataUrl;
+                img.classList.add("image");
                 console.log(dataUrl);
                 document.body.appendChild(img);
             });
