@@ -1,1 +1,0 @@
-alert("loaded content-script.js"),console.log("loaded content-script.js");

@@ -1,0 +1,1 @@
+console.log("loaded index.js"),window.onload=()=>{document.getElementById("triggerScreenshot").addEventListener("click",(()=>{console.log("clicked button")}))};

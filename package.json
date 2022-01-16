@@ -2,7 +2,7 @@
   "name": "javascript-otp-store",
   "version": "1.0.0",
   "description": "basic chrome extension",
-  "main": "src/index.js",
+  "main": "src/content-script.js",
   "repository": "git@github.com:JBAkroyd/javascript-otp-store.git",
   "author": "Jordan Akroyd <36215472+JBAkroyd@users.noreply.github.com>",
   "license": "MIT",
