@@ -1,7 +1,5 @@
 // import qrscanner from 'qr-scanner';
 // import { TakeScreenshot } from "./screenshot";
-
-alert("loaded content-script.js");
 console.log("loaded content-script.js");
 // let button = document.getElementById("triggerScreenshot");
 // button.addEventListener("click", () => {

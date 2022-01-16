@@ -8,19 +8,12 @@ async function getTabID() {
     }
 }
 
-function sayHello() {
-    return "hello"
-}
-
-
 getTabID().then(tabs => {
     const tabId = tabs[0].id;
     console.log(tabId);
     chrome.scripting.executeScript({
         target: {tabId: tabId},
-        func: sayHello
-    }, (injectionResults) => {
-        injectionResults.forEach(item => console.log(item.result));
+        files: ['js/content-script.js']
     });
 }).catch((e) => {
     console.log(e);
